@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float num1, num2, num3, average;
+
+    // Prompt user for three numbers
+    printf("Enter three numbers: ");
+    
+    // Read input from the user
+    // Using %f allows for decimal (floating-point) numbers
+    scanf("%f %f %f", &num1, &num2, &num3);
+
+    // Calculate the average
+    average = (num1 + num2 + num3) / 3;
+
+    // Display result with two decimal places
+    printf("The average is: %.2f\n", average);
+
+    return 0;
+}
