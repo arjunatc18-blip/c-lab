@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int total_seconds, hours, minutes, seconds;
+
+    // Prompt user for input
+    printf("Enter total seconds: ");
+    scanf("%d", &total_seconds);
+
+    // Calculate hours (3600 seconds in 1 hour)
+    hours = total_seconds / 3600;
+
+    // Calculate remaining minutes from leftover seconds
+    minutes = (total_seconds % 3600) / 60;
+
+    // Calculate remaining seconds
+    seconds = total_seconds % 60;
+
+    // Output result in H:M:S format
+    printf("Time: %d hours, %d minutes, %d seconds\n", hours, minutes, seconds);
+
+    return 0;
+}
