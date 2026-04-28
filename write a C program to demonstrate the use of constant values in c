@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+/* 1. Using #define Preprocessor Directive */
+/* Conventionally written in uppercase; these are replaced before compilation. */
+#define PI 3.14159
+#define MAX_USERS 100
+
+int main() {
+    /* 2. Using the const Keyword */
+    /* This defines a typed constant that is read-only. */
+    const float radius = 5.5;
+    const char GRADE = 'A';
+
+    // Calculating circumference using constants
+    float circumference = 2 * PI * radius;
+
+    // Outputting constant values
+    printf("Value of PI: %.5f\n", PI);
+    printf("Max Users Allowed: %d\n", MAX_USERS);
+    printf("Radius (const variable): %.1f\n", radius);
+    printf("Student Grade: %c\n", GRADE);
+    printf("Calculated Circumference: %.2f\n", circumference);
+
+    /* 
+       UNCOMMENTING THE LINE BELOW WILL CAUSE A COMPILE-TIME ERROR:
+       radius = 10.0; // error: assignment of read-only variable 'radius'
+    */
+
+    return 0;
+}
