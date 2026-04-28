@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float km, meters, cm;
+
+    // Request user input for distance in kilometers
+    printf("Enter distance in kilometers: ");
+    scanf("%f", &km);
+
+    // Perform conversions
+    // 1 Kilometer = 1000 Meters
+    meters = km * 1000.0;
+    
+    // 1 Kilometer = 100000 Centimeters
+    cm = km * 100000.0;
+
+    // Display the results formatted to 2 decimal places
+    printf("%.2f Kilometers = %.2f Meters\n", km, meters);
+    printf("%.2f Kilometers = %.2f Centimeters\n", km, cm);
+
+    return 0;
+}
